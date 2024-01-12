@@ -1,6 +1,6 @@
 echo -e "\e[32m Downloading ElasticSearch Repo \e[0m"
 sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
-cp /root/elk_roboshop/elasticsearch.repo /etc/yum.repos.d/elasticsearch.repo
+cp /elk_roboshop/elasticsearch.repo /etc/yum.repos.d/elasticsearch.repo
 echo -e "\e[32m Installing ElasticSearch \e[0m"
 yum install elasticsearch -y
 echo -e "\e[32m Enabling and starting ElasticSearch \e[0m"
